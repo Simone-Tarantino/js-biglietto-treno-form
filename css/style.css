@@ -78,8 +78,41 @@ body {
 
 .ticket-div {
   background-color: #FFF;
-  /* da rimuovere height */
-  height: 200px;
   width: 70%;
   margin: auto;
+  padding: 20px;
+}
+
+.info-title {
+  text-transform: uppercase;
+}
+
+.name-l .info-title {
+  text-align: center;
+}
+
+.ticket {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.name-l {
+  flex-grow: 1;
+  background-color: #808080;
+  padding: 20px 5px;
+}
+
+.ticket-info {
+  flex-grow: 20;
+  padding: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.ticket-info th {
+  text-align: left;
+}
+.ticket-info td {
+  padding-right: 100px;
+  padding-top: 40px;
 }
