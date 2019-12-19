@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: #B91350;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
+  background-color: #B91350;
 }
 
 .title {
-  color: #FFF;
+  margin: 20px 0;
+  text-align: center;
   text-transform: uppercase;
   font-size: 30px;
-  text-align: center;
-  margin: 20px 0;
+  color: #FFF;
 }
 
 /* primo div ticket form */
@@ -23,9 +23,9 @@ body {
 .ticket-form-div {
   width: 70%;
   margin: auto;
-  background-color: #FFF;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: #FFF;
 }
 
 /* sezione form */
@@ -42,9 +42,9 @@ body {
   margin: 0 40px;
 }
 .ticket-form-col label {
-  color: #B91350;
   margin: 20px 0 13px;
   text-align: center;
+  color: #B91350;
 }
 .ticket-form-col input,
 .ticket-form-col select {
@@ -56,8 +56,8 @@ body {
 }
 .ticket-form-col input:focus,
 .ticket-form-col select:focus {
-  background-color: #B91350;
   color: #FFF;
+  background-color: #B91350;
 }
 
 /* sezione bottoni */
@@ -69,12 +69,12 @@ body {
 }
 .ticket-form-btn button {
   margin: 0 10px;
+  padding: 5px;
   font-size: 15px;
   font-weight: bold;
-  color: #B91350;
-  border-radius: 3px;
-  padding: 5px;
   border: 1px solid grey;
+  border-radius: 3px;
+  color: #B91350;
   background-color: #D2D2D2;
 }
 .ticket-form-btn button:hover {
@@ -87,14 +87,14 @@ body {
 /* secondo div ticket */
 
 .ticket-div {
-  background-color: #FFF;
   width: 70%;
-  margin: auto;
   padding: 20px;
+  margin: auto;
+  background-color: #FFF;
 }
 .hidden {
   opacity: 0;
-  transition: opacity 2s;
+  transition: opacity 1s;
 }
 
 .info-title {
@@ -109,8 +109,8 @@ body {
 
 .name-l {
   flex-grow: 1;
-  background-color: #808080;
   padding: 20px 0;
+  background-color: #808080;
 }
 .name-l .info-title {
   text-align: center;

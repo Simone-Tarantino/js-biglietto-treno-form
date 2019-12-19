@@ -47,13 +47,12 @@ genera.addEventListener('click',
   }
 );
 
-// bottone annulla
-// var annulla = document.getElementById('annulla-id');
-// annulla.addEventListener('click'
-//   function() {
-//
-//   }
-// );
+var annulla = document.getElementById('annulla-id');
+annulla.addEventListener('click',
+  function() {
+    document.getElementById('ticket-div-id').classList.add('hidden');
+  }
+);
 
 
 // // chiedo al passeggero quanti km devo percorrere
