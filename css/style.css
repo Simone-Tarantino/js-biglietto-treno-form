@@ -43,7 +43,18 @@ body {
 }
 .ticket-form-col label {
   color: #B91350;
+  margin: 20px 0 13px;
+  text-align: center;
 }
+.ticket-form-col input,
+.ticket-form-col select {
+  height: 27px;
+  border: 1px solid #B91350;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 15px;
+}
+
 
 /* secondo div ticket */
 
