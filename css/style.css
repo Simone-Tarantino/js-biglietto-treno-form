@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #B91350;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.title {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ticket-form {
+  height: 200px;
+  width: 70%;
+  margin: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
