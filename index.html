@@ -13,16 +13,16 @@
     <div class="ticket-form-div">
       <div class="ticket-form">
         <div class="ticket-form-col">
-          <label for="name">Nome Cognome</label>
-          <input type="text" name="name" value="" placeholder="Inserisci il tuo nome">
+          <label for="name-id">Nome Cognome</label>
+          <input id="name-id" type="text" name="name" value="" placeholder="Inserisci il tuo nome">
         </div>
         <div class="ticket-form-col">
-          <label for="km">Km da percorrere</label>
-          <input type="number" name="km" value="" placeholder="Inserisci i km">
+          <label for="km-id">Km da percorrere</label>
+          <input id="km-id" type="number" name="km" value="" placeholder="Inserisci i km">
         </div>
         <div class="ticket-form-col">
-          <label for="age">Fascia d'età</label>
-          <select class="age" name="age">
+          <label for="age-id">Fascia d'età</label>
+          <select id="age-id" class="age" name="age">
             <option value="minorenne">Minorenne</option>
             <option value="maggiorenne">Maggiorenne</option>
             <option value="over65">Over 65</option>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="ticket-form-btn">
-        <button type="button" name="genera">Genera</button>
+        <button id="genera-id" type="button" name="genera">Genera</button>
         <button type="button" name="annulla">Annulla</button>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <div class="name-l">
           <h3 class="info-title">nome passeggero</h3>
           <!-- js compila con nome -->
-          <h3></h3>
+          <h3 id="nome-passeggero"></h3>
         </div>
         <div class="ticket-info">
           <table>
@@ -57,10 +57,10 @@
             <tbody>
               <tr>
                 <!-- js compila con dati -->
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td id="offerta"></td>
+                <td id="carrozza"></td>
+                <td id="cp"></td>
+                <td id="costo-biglietto"></td>
               </tr>
             </tbody>
           </table>

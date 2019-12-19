@@ -1,7 +1,38 @@
-// Il programma dovrà chiedere all’utente il numero di chilometri che vuole
-// percorrere e l’età del passeggero.
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio.
-// Il prezzo del biglietto è definito in base ai km (0.21 € al km), ma va applicato uno sconto del 20% per i minorenni e del 40% per gli over 65.
+var genera = document.getElementById('genera-id');
+genera.addEventListener('click',
+  function() {
+    // nome
+    var nameInput = document.getElementById('name-id');
+    var name = nameInput.value;
+
+    // km da percorrere
+    var kmInput = document.getElementById('km-id');
+    var km = parseInt(kmInput.value);
+
+    var prezzoBigliettoSingoloKm = 0.21;
+    var prezzoBigliettoViaggioCompleto = km * prezzoBigliettoSingoloKm;
+
+    document.getElementById('nome-passeggero').innerHTML = name;
+    document.getElementById('offerta').innerHTML = "Tariffa standard";
+    document.getElementById('costo-biglietto').innerHTML = prezzoBigliettoViaggioCompleto.toFixed(2);
+    // fascia età sconto
+    var ageInput = document.getElementById('age-id');
+    var age = ageInput.value;
+
+    if (age == 'minorenne') {
+      var scontoPercentuale = (prezzoBigliettoViaggioCompleto * 20) / 100;
+      var prezzoBiglietto = prezzoBigliettoViaggioCompleto - scontoPercentuale;
+      document.getElementById('offerta').innerHTML = "Sconto minorenni";
+      document.getElementById('costo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
+    } else if (age == 'over65') {
+      var scontoPercentuale = (prezzoBigliettoViaggioCompleto * 40) / 100;
+      var prezzoBiglietto = prezzoBigliettoViaggioCompleto - scontoPercentuale;
+      document.getElementById('offerta').innerHTML = "Sconto Over 65";
+      document.getElementById('costo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
+    }
+  }
+);
+
 
 // // chiedo al passeggero quanti km devo percorrere
 // var kmDaPercorrere = parseInt(prompt('Quanti km devi percorrere?'));
@@ -10,7 +41,7 @@
 // // stabilisco variabile del costo per km
 // var prezzoBigliettoSingoloKm = 0.21;
 // // calcolo prezzo del biglietto completo moltiplicando i km per il prezzo del singolo km
-// var prezzoBigliettoViaggioCompleto = prezzoBigliettoSingoloKm * kmDaPercorrere;
+// var  = prezzoBigliettoSingoloKm * kmDaPercorrere;
 // console.log(prezzoBigliettoViaggioCompleto);
 // // condizione se il passeggero ha meno o uguale a 18 anni/ più di 65 anni o nessuna delle due
 // if (etaPasseggero <= 18) {
