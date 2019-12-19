@@ -1,3 +1,4 @@
+// bottone genera
 var genera = document.getElementById('genera-id');
 genera.addEventListener('click',
   function() {
@@ -9,29 +10,50 @@ genera.addEventListener('click',
     var kmInput = document.getElementById('km-id');
     var km = parseInt(kmInput.value);
 
+    // calcolo prezzo biglietto pieno
     var prezzoBigliettoSingoloKm = 0.21;
     var prezzoBigliettoViaggioCompleto = km * prezzoBigliettoSingoloKm;
 
-    document.getElementById('nome-passeggero').innerHTML = name;
-    document.getElementById('offerta').innerHTML = "Tariffa standard";
-    document.getElementById('costo-biglietto').innerHTML = prezzoBigliettoViaggioCompleto.toFixed(2);
+    // calcolo carrozza
+    var carrozza = Math.floor(Math.random() * 9) + 1;
+
+    // calcolo cp
+    var cp = Math.floor(Math.random() * (100000 - 90000 + 1) ) + 90000;
+
+    // mosta su html
+    document.getElementById('ticket-div-id').classList.remove('hidden');
+
+    document.getElementById('nome-passeggero-id').innerHTML = name;
+    document.getElementById('offerta-id').innerHTML = "Tariffa standard";
+    document.getElementById('carrozza-id').innerHTML = carrozza;
+    document.getElementById('cp-id').innerHTML = cp;
+    document.getElementById('costo-biglietto-id').innerHTML = prezzoBigliettoViaggioCompleto.toFixed(2);
     // fascia età sconto
     var ageInput = document.getElementById('age-id');
     var age = ageInput.value;
 
+    // condizione sconto
     if (age == 'minorenne') {
       var scontoPercentuale = (prezzoBigliettoViaggioCompleto * 20) / 100;
       var prezzoBiglietto = prezzoBigliettoViaggioCompleto - scontoPercentuale;
-      document.getElementById('offerta').innerHTML = "Sconto minorenni";
-      document.getElementById('costo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
+      document.getElementById('offerta-id').innerHTML = "Sconto minorenni";
+      document.getElementById('costo-biglietto-id').innerHTML = prezzoBiglietto.toFixed(2);
     } else if (age == 'over65') {
       var scontoPercentuale = (prezzoBigliettoViaggioCompleto * 40) / 100;
       var prezzoBiglietto = prezzoBigliettoViaggioCompleto - scontoPercentuale;
-      document.getElementById('offerta').innerHTML = "Sconto Over 65";
-      document.getElementById('costo-biglietto').innerHTML = prezzoBiglietto.toFixed(2);
+      document.getElementById('offerta-id').innerHTML = "Sconto Over 65";
+      document.getElementById('costo-biglietto-id').innerHTML = prezzoBiglietto.toFixed(2);
     }
   }
 );
+
+// bottone annulla
+// var annulla = document.getElementById('annulla-id');
+// annulla.addEventListener('click'
+//   function() {
+//
+//   }
+// );
 
 
 // // chiedo al passeggero quanti km devo percorrere
