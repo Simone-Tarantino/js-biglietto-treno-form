@@ -21,14 +21,14 @@ body {
 /* primo div ticket form */
 
 .ticket-form-div {
-  /* da rimuovere height */
-  height: 200px;
   width: 70%;
   margin: auto;
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
+
+/* sezione form */
 
 .ticket-form {
   display: flex;
@@ -53,6 +53,24 @@ body {
   border-radius: 4px;
   text-align: center;
   font-size: 15px;
+}
+
+/* sezione bottoni */
+
+.ticket-form-btn {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 20px;
+}
+.ticket-form-btn button {
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #B91350;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid grey;
+  background-color: #D2D2D2;
 }
 
 
