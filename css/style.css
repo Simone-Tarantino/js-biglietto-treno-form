@@ -87,10 +87,6 @@ body {
   text-transform: uppercase;
 }
 
-.name-l .info-title {
-  text-align: center;
-}
-
 .ticket {
   display: flex;
   width: 100%;
@@ -100,7 +96,15 @@ body {
 .name-l {
   flex-grow: 1;
   background-color: #808080;
-  padding: 20px 5px;
+  padding: 20px 0;
+}
+.name-l .info-title {
+  text-align: center;
+}
+
+#nome-passeggero {
+  padding-left: 13px;
+  font-size: 20px;
 }
 
 .ticket-info {
